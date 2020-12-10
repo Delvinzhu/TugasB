@@ -47,7 +47,7 @@
                                             <div class="card-body">
                                             <h5 class="card-title">{{$item->name}}</h5>
                                             <p class="card-text">RP. {{$item->price_money}}</p>
-                                            @if (Auth::user()->roles->level == 'Manager')
+                                            @if (Auth::user() != null && Auth::user()->roles->level == 'Manager')
                                                 <a href="{{route('edit-flow',$item->id)}}" class="btn btn-primary">Edit</a>
                                                 <a href="{{route('delete-flow',$item->id)}}" class="btn btn-danger">Delete</a>
                                             @else
