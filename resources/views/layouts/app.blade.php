@@ -25,13 +25,13 @@
             height:300px !important;
         }
         body{
-            background-color: aquamarine !important;
+            background-color: grey !important;
         }
     </style>
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-aquamarine shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-light bg-grey shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     Flowelto Shop
