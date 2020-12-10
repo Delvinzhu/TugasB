@@ -24,7 +24,7 @@
                                 <p class="card-text text-danger">RP. {{$data->price}}</p>
 
                                 <p class="card-text">{{$data->description}}.</p>
-                                @if (Auth::user()->roles->level == 'Manager')
+                                @if (Auth::user() != null && Auth::user()->roles->level == 'Manager')
                                     <div class="row ml-1">
                                         <a href="{{route('edit-flow',$data->id)}}" class="btn btn-primary mr-2">Edit</a>
                                         <a href="{{route('delete-flow',$data->id)}}" class="btn btn-danger">Delete</a>
