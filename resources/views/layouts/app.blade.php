@@ -24,11 +24,14 @@
         .card-img-top-d{
             height:300px !important;
         }
+        body{
+            background-color: pink !important;
+        }
     </style>
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-light bg-pink shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     Flowelto Shop
